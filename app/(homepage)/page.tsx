@@ -1,5 +1,8 @@
+import { Card1 } from "@/components/card-1";
 import { Button } from "@/components/ui/button";
+import { keunggulan } from "@/constant";
 import Image from "next/image";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
@@ -37,6 +40,69 @@ const HomePage = () => {
               height={480}
               className=""
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Keunggulan */}
+      <section className="bg-slate-100 px-4 py-16">
+        <div className="container flex flex-col items-center">
+          <h2 className="text-balance text-center text-2xl font-bold lg:text-4xl">
+            Keunggulan Integrasi API&nbsp;
+            <span className="text-primary">KiriminAja</span>
+          </h2>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+            {keunggulan?.map((item) => (
+              <Card1
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                body={item.body}
+              />
+            ))}
+          </div>
+
+          <div className="mt-4 flex w-full flex-col items-center gap-4 rounded-2xl bg-slate-200 p-4 py-6 lg:mt-10 lg:flex-row lg:justify-between lg:rounded-3xl lg:p-8">
+            <h2 className="w-full text-center text-2xl font-bold lg:w-2/3 lg:text-start lg:text-4xl">
+              Coba Aplikasi KiriminAja Sekarang!
+            </h2>
+
+            <div className="flex flex-col items-center gap-2 lg:items-end">
+              <div className="grid grid-cols-2 gap-2 sm:flex sm:items-center sm:justify-center">
+                <Link
+                  href="#"
+                  className="flex h-full items-center justify-center overflow-hidden rounded-xl sm:h-12"
+                >
+                  <Image
+                    src="/playstore.webp"
+                    alt="PlayStore"
+                    width={357}
+                    height={105}
+                    className="h-full w-auto"
+                  />
+                </Link>
+
+                <Link
+                  href="#"
+                  className="flex h-full items-center justify-center overflow-hidden rounded-xl sm:h-12"
+                >
+                  <Image
+                    src="/appstore.webp"
+                    alt="PlayStore"
+                    width={357}
+                    height={105}
+                    className="h-full w-auto"
+                  />
+                </Link>
+              </div>
+              <span>
+                atau versi&nbsp;
+                <Link href="#" className="font-semibold underline">
+                  Web Dashboard
+                </Link>
+              </span>
+            </div>
           </div>
         </div>
       </section>
