@@ -1,6 +1,7 @@
 import { Card1 } from "@/components/card-1";
+import { FAQ } from "@/components/faq";
 import { Button } from "@/components/ui/button";
-import { keunggulan } from "@/constant";
+import { keunggulan, logoClouds } from "@/constant";
 import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -252,21 +253,30 @@ const HomePage = () => {
       <section className="px-4 py-16 pt-0">
         <div className="container">
           {/* Row */}
-          <div className="flex w-full flex-col items-center gap-8 lg:flex-row lg:justify-between">
+          <div className="flex w-full flex-col-reverse items-center gap-8 lg:flex-row lg:justify-between">
             {/* Col */}
-            <div className="flex aspect-square w-full items-center justify-center lg:w-6/12">
-              <Image
-                src="/support.webp"
-                alt="Image"
-                width={480}
-                height={480}
-                className="h-auto w-full"
-              />
+            <div className="flex w-full flex-wrap items-center justify-around gap-4 lg:w-6/12">
+              {logoClouds?.slice(0, 10).map((item) => (
+                <Link
+                  key={item.id}
+                  href="#"
+                  className="group flex w-[30%] items-center justify-center overflow-hidden rounded-3xl bg-slate-100 p-4 transition hover:bg-background hover:shadow-lg"
+                >
+                  <Image
+                    src={`/${item.media}`}
+                    alt="Image"
+                    width={256}
+                    height={256}
+                    className="scale-95 transition group-hover:scale-75"
+                  />
+                </Link>
+              ))}
             </div>
             {/* Col */}
             <div className="flex w-full flex-col gap-4 lg:w-5/12">
-              <h2 className="text-balance text-2xl font-bold lg:text-4xl">
-                Dipercaya oleh Ribuan Pebisnis Online
+              <h2 className="h2">
+                Dipercaya oleh Ribuan&nbsp;
+                <span className="text-primary">Pebisnis Online</span>
               </h2>
 
               <p className="text-lg">
@@ -283,18 +293,20 @@ const HomePage = () => {
       {/* Testimoni */}
       <section className="bg-slate-100 px-4 py-16">
         <div className="container flex flex-col items-center gap-8">
-          <h2 className="text-balance text-center text-2xl font-bold lg:text-4xl">
-            Kata Mereka tentang KiriminAja
-          </h2>
+          <h2 className="h2 text-center">Kata Mereka tentang KiriminAja</h2>
+
+          <div className="aspect-video w-full overflow-hidden rounded-3xl bg-blue-500 lg:w-2/3"></div>
         </div>
       </section>
 
       {/* FAQ */}
       <section className="px-4 py-16">
         <div className="container flex flex-col items-center gap-8">
-          <h2 className="text-balance text-center text-2xl font-bold lg:text-4xl">
-            Pertanyaan yang Sering Diajukan
-          </h2>
+          <h2 className="h2 text-center">Pertanyaan yang Sering Diajukan</h2>
+
+          <div className="w-full lg:w-2/3">
+            <FAQ />
+          </div>
         </div>
       </section>
     </>
