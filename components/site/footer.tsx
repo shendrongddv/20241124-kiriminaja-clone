@@ -10,6 +10,7 @@ import {
 import { Logo } from "./logo";
 import Link from "next/link";
 import Image from "next/image";
+import { CtaAlpha } from "../cta-alpha";
 
 const socialMedia = [
   {
@@ -135,79 +136,86 @@ const socialMedia = [
 
 export const Footer = () => {
   return (
-    <footer className="px-4 text-foreground/75">
-      {/* Row */}
-      <div className="container grid grid-cols-2 gap-4 py-16 lg:grid-cols-5">
-        {/* Col */}
-        <div className="col-span-2 lg:col-span-3">
-          <div className="flex w-full flex-col items-start gap-4 border lg:w-4/5">
-            <Logo />
+    <>
+      <CtaAlpha />
+      <footer className="px-4 text-foreground/75">
+        {/* Row */}
+        <div className="container grid grid-cols-2 gap-4 py-16 lg:grid-cols-5">
+          {/* Col */}
+          <div className="col-span-2 lg:col-span-3">
+            <div className="flex w-full flex-col items-start gap-4 border lg:w-4/5">
+              <Logo />
 
-            <div className="flex items-center justify-center gap-1">
-              {socialMedia?.map((item) => (
-                <SocialMedia key={item.id} href={item.href} icon={item.icon} />
-              ))}
-            </div>
-
-            <span>PT Selalu Siap Solusi</span>
-
-            <Link href="#" className="text-muted-foreground">
-              Jl. Palagan Tentara Pelajar No.30 km.08, Karang Moko, Sariharjo,
-              Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581
-            </Link>
-
-            <small>Terdaftar di:</small>
-
-            <ul>
-              <li>
-                <Link href="/">
-                  <Image
-                    src="/download.png"
-                    alt="Image"
-                    width={156}
-                    height={156}
-                    className=""
+              <div className="flex items-center justify-center gap-1">
+                {socialMedia?.map((item) => (
+                  <SocialMedia
+                    key={item.id}
+                    href={item.href}
+                    icon={item.icon}
                   />
-                </Link>
-              </li>
-            </ul>
+                ))}
+              </div>
+
+              <span>PT Selalu Siap Solusi</span>
+
+              <Link href="#" className="text-muted-foreground">
+                Jl. Palagan Tentara Pelajar No.30 km.08, Karang Moko, Sariharjo,
+                Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581
+              </Link>
+
+              <small>Terdaftar di:</small>
+
+              <ul>
+                <li>
+                  <Link href="/">
+                    <Image
+                      src="/download.png"
+                      alt="Image"
+                      width={156}
+                      height={156}
+                      className=""
+                    />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Col */}
+          <div className="flex flex-col items-start justify-start gap-8">
+            <div className="grid gap-4">
+              <span className="font-display text-base font-semibold text-primary">
+                Produk
+              </span>
+
+              <ul className="grid gap-4">
+                <li>
+                  <Link href="#">Integrasi API</Link>
+                </li>
+                <li>
+                  <Link href="#">Integrasi API</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Col */}
+          <div className="border p-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              esse suscipit neque.
+            </p>
           </div>
         </div>
 
-        {/* Col */}
-        <div className="flex flex-col items-start justify-start gap-8">
-          <div className="grid gap-4">
-            <span className="font-display text-base font-semibold text-primary">
-              Produk
-            </span>
-
-            <ul className="grid gap-4">
-              <li>
-                <Link href="#">Integrasi API</Link>
-              </li>
-              <li>
-                <Link href="#">Integrasi API</Link>
-              </li>
-            </ul>
-          </div>
+        {/* Row */}
+        <div className="container border-t py-6">
+          <small className="text-muted-foreground">
+            © 2020 - 2024 PT Selalu Siap Solusi
+          </small>
         </div>
-
-        {/* Col */}
-        <div className="border p-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            esse suscipit neque.
-          </p>
-        </div>
-      </div>
-
-      {/* Row */}
-      <div className="container border-t py-6">
-        <small className="text-muted-foreground">
-          © 2020 - 2024 PT Selalu Siap Solusi
-        </small>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 
