@@ -44,94 +44,94 @@ const socialMedia = [
   },
 ];
 
-const footerLinks = [
-  {
-    id: "1b2c820d-4a97-562a-983b-f271d0eed52b",
-    title: "Produk",
-    href: "",
-    icon: "",
-    links: [
-      {
-        id: "caf6bad9-bd87-5ec9-abe8-3f74e4718fbd",
-        title: "Integrasi API",
-        href: "#",
-        icon: "",
-      },
-    ],
-  },
-  {
-    id: "35cc879a-6803-5538-a397-0858f5ebe103",
-    title: "Lainnya",
-    href: "",
-    icon: "",
-    links: [
-      {
-        id: "5d47a430-9f0a-53b3-8538-14e65b21d9e4",
-        title: "Cek Ongkir",
-        href: "#",
-        icon: "",
-      },
-      {
-        id: "fa5283c8-6dff-5388-ae88-d484ea7d4dfa",
-        title: "Cek Resi",
-        href: "#",
-        icon: "",
-      },
-      {
-        id: "55149629-3a39-53bb-b3cd-fadc0d90e388",
-        title: "CPress Kit",
-        href: "#",
-        icon: "",
-      },
-      {
-        id: "c8cb13c8-627e-5458-bf5a-43b04fa1a65e",
-        title: "Panduan",
-        href: "#",
-        icon: "",
-      },
-      {
-        id: "90ebaab3-f32b-5c51-8910-db50e0d05023",
-        title: "Status Sistem",
-        href: "#",
-        icon: "",
-      },
-    ],
-  },
-  {
-    id: "aa9a3081-f053-5403-bbca-a54e772dfdcc",
-    title: "Perusahaan",
-    href: "",
-    icon: "",
-    links: [
-      {
-        id: "624fd538-5753-5be8-9d57-04ecbd4646f8",
-        title: "Tentang Kami",
-        href: "#",
-        icon: "",
-      },
-    ],
-  },
-  {
-    id: "7d9ec03b-2a87-59f7-b09c-50b23186bd0e",
-    title: "Legal",
-    href: "",
-    icon: "",
-    links: [
-      {
-        id: "74d16cbe-ffe2-51f2-b3cd-319c97bcf307",
-        title: "Syarat & Ketentuan",
-        href: "#",
-        icon: "",
-      },
-      {
-        id: "f132010c-fe4a-5b2a-859e-0cb40eb228c9",
-        title: "Kebijakan Privasi",
-        href: "#",
-        icon: "",
-      },
-    ],
-  },
-];
+// const footerLinks = [
+//   {
+//     id: "1b2c820d-4a97-562a-983b-f271d0eed52b",
+//     title: "Produk",
+//     href: "",
+//     icon: "",
+//     links: [
+//       {
+//         id: "caf6bad9-bd87-5ec9-abe8-3f74e4718fbd",
+//         title: "Integrasi API",
+//         href: "#",
+//         icon: "",
+//       },
+//     ],
+//   },
+//   {
+//     id: "35cc879a-6803-5538-a397-0858f5ebe103",
+//     title: "Lainnya",
+//     href: "",
+//     icon: "",
+//     links: [
+//       {
+//         id: "5d47a430-9f0a-53b3-8538-14e65b21d9e4",
+//         title: "Cek Ongkir",
+//         href: "#",
+//         icon: "",
+//       },
+//       {
+//         id: "fa5283c8-6dff-5388-ae88-d484ea7d4dfa",
+//         title: "Cek Resi",
+//         href: "#",
+//         icon: "",
+//       },
+//       {
+//         id: "55149629-3a39-53bb-b3cd-fadc0d90e388",
+//         title: "CPress Kit",
+//         href: "#",
+//         icon: "",
+//       },
+//       {
+//         id: "c8cb13c8-627e-5458-bf5a-43b04fa1a65e",
+//         title: "Panduan",
+//         href: "#",
+//         icon: "",
+//       },
+//       {
+//         id: "90ebaab3-f32b-5c51-8910-db50e0d05023",
+//         title: "Status Sistem",
+//         href: "#",
+//         icon: "",
+//       },
+//     ],
+//   },
+//   {
+//     id: "aa9a3081-f053-5403-bbca-a54e772dfdcc",
+//     title: "Perusahaan",
+//     href: "",
+//     icon: "",
+//     links: [
+//       {
+//         id: "624fd538-5753-5be8-9d57-04ecbd4646f8",
+//         title: "Tentang Kami",
+//         href: "#",
+//         icon: "",
+//       },
+//     ],
+//   },
+//   {
+//     id: "7d9ec03b-2a87-59f7-b09c-50b23186bd0e",
+//     title: "Legal",
+//     href: "",
+//     icon: "",
+//     links: [
+//       {
+//         id: "74d16cbe-ffe2-51f2-b3cd-319c97bcf307",
+//         title: "Syarat & Ketentuan",
+//         href: "#",
+//         icon: "",
+//       },
+//       {
+//         id: "f132010c-fe4a-5b2a-859e-0cb40eb228c9",
+//         title: "Kebijakan Privasi",
+//         href: "#",
+//         icon: "",
+//       },
+//     ],
+//   },
+// ];
 
 export const Footer = () => {
   return (
@@ -218,7 +218,7 @@ type LinkProps = {
   icon: RemixiconComponentType;
 };
 
-type LinksProps = LinkProps[];
+// type LinksProps = LinkProps[];
 
 export const SocialMedia = ({ href, icon: Icon }: LinkProps) => {
   return (
@@ -229,9 +229,3 @@ export const SocialMedia = ({ href, icon: Icon }: LinkProps) => {
     </div>
   );
 };
-
-// export const FooterLinks = ({}:LinkProps) => {
-//   return (
-
-//   )
-// }
