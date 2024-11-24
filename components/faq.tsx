@@ -15,7 +15,7 @@ export const FAQ = () => {
           value={item.id}
           className="overflow-hidden rounded-2xl border"
         >
-          <AccordionTrigger className="font-body items-start gap-4 px-6 py-4 text-start text-base font-semibold">
+          <AccordionTrigger className="font-body items-start gap-4 px-6 py-4 text-start text-base font-semibold hover:no-underline">
             {item.question}
           </AccordionTrigger>
           <AccordionContent className="border-t px-6 py-4 text-base text-muted-foreground">
