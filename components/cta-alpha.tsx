@@ -22,7 +22,7 @@ export const CtaAlpha = () => {
             <div className="grid gap-4">
               <Link
                 href="#"
-                className="flex h-12 items-center justify-center overflow-hidden rounded-xl"
+                className="flex max-h-16 items-center justify-center overflow-hidden rounded-xl"
               >
                 <Image
                   src="/playstore.webp"
@@ -35,7 +35,7 @@ export const CtaAlpha = () => {
 
               <Link
                 href="#"
-                className="flex h-12 items-center justify-center overflow-hidden rounded-xl"
+                className="flex max-h-16 items-center justify-center overflow-hidden rounded-xl"
               >
                 <Image
                   src="/appstore.webp"
@@ -47,13 +47,13 @@ export const CtaAlpha = () => {
               </Link>
             </div>
 
-            <div className="flex aspect-square h-28 shrink-0 items-center justify-center rounded-xl bg-white p-0.5">
+            <div className="flex aspect-square h-36 shrink-0 items-center justify-center rounded-xl bg-white p-1">
               <Image
                 src="/qr-code-ka.png"
                 alt="Image"
-                width={120}
-                height={120}
-                className="h-auto w-full"
+                width={128}
+                height={128}
+                className="h-full w-auto"
               />
             </div>
           </div>
