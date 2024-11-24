@@ -1,3 +1,4 @@
+import { ButtoAppStore, ButtoGooglePlay } from "@/components/button-download";
 import { Card1 } from "@/components/card-1";
 import { FAQ } from "@/components/faq";
 import { Button } from "@/components/ui/button";
@@ -49,9 +50,9 @@ const HomePage = () => {
       {/* Cek */}
 
       {/* Keunggulan */}
-      <section className="bg-slate-100 px-4 py-16">
+      <section className="bg-slate-100 px-4 py-20">
         <div className="container flex flex-col items-center">
-          <h2 className="text-balance text-center text-2xl font-bold lg:text-4xl">
+          <h2 className="h2 text-center">
             Keunggulan Integrasi API&nbsp;
             <span className="text-primary">KiriminAja</span>
           </h2>
@@ -67,38 +68,15 @@ const HomePage = () => {
             ))}
           </div>
 
-          <div className="mt-4 flex w-full flex-col items-center gap-4 rounded-2xl bg-slate-200 p-4 py-6 lg:mt-10 lg:flex-row lg:justify-between lg:rounded-3xl lg:p-8">
-            <h2 className="w-full text-center text-2xl font-bold lg:w-2/3 lg:text-start lg:text-4xl">
+          <div className="mt-4 flex w-full flex-col items-center gap-4 rounded-2xl bg-slate-200 p-6 py-6 lg:mt-10 lg:flex-row lg:justify-between lg:rounded-3xl lg:p-8">
+            <h2 className="h2 text-center lg:text-start">
               Coba Aplikasi KiriminAja Sekarang!
             </h2>
 
-            <div className="flex flex-col items-center gap-2 lg:items-end">
-              <div className="grid grid-cols-2 gap-2 sm:flex sm:items-center sm:justify-center">
-                <Link
-                  href="#"
-                  className="flex h-full items-center justify-center overflow-hidden rounded-xl sm:h-12"
-                >
-                  <Image
-                    src="/playstore.webp"
-                    alt="PlayStore"
-                    width={357}
-                    height={105}
-                    className="h-full w-auto"
-                  />
-                </Link>
-
-                <Link
-                  href="#"
-                  className="flex h-full items-center justify-center overflow-hidden rounded-xl sm:h-12"
-                >
-                  <Image
-                    src="/appstore.webp"
-                    alt="PlayStore"
-                    width={357}
-                    height={105}
-                    className="h-full w-auto"
-                  />
-                </Link>
+            <div className="mt-2 flex flex-col items-center gap-4 lg:items-end">
+              <div className="flex items-center justify-center gap-4">
+                <ButtoGooglePlay />
+                <ButtoAppStore />
               </div>
               <span>
                 atau versi&nbsp;
@@ -112,17 +90,17 @@ const HomePage = () => {
       </section>
 
       {/* Section */}
-      <section className="px-4 py-16">
+      <section className="px-4 py-20">
         <div className="container">
           {/* Row */}
-          <div className="flex w-full flex-col items-center gap-8 lg:flex-row lg:justify-between">
+          <div className="flex w-full flex-col items-center gap-12 lg:flex-row lg:justify-between">
             {/* Col */}
-            <div className="flex w-full flex-col gap-4 lg:w-5/12">
-              <h2 className="text-balance text-2xl font-bold lg:text-4xl">
+            <div className="flex w-full flex-col gap-4 lg:w-6/12">
+              <h2 className="h2 text-balance">
                 Solusi Pengiriman Efektif dan Efisien
               </h2>
 
-              <p className="text-lg">
+              <p className="lead">
                 Pengiriman Instan, Same Day, Next Day, Reguler, Ekonomi, dan
                 Kargo didukung oleh lebih dari 15 ekspedisi ke seluruh Indonesia
                 dalam satu platform.
@@ -130,15 +108,15 @@ const HomePage = () => {
 
               <ul className="grid gap-2">
                 <li className="gap2 flex items-start justify-normal text-start">
-                  <BadgeCheck className="mr-2 mt-1 size-4 shrink-0 text-primary" />
+                  <BadgeCheck className="mr-2 size-6 shrink-0 text-primary" />
                   Jangkauan pengiriman luas, bisa kirim ke seluruh Indonesia.
                 </li>
                 <li className="gap2 flex items-start justify-normal text-start">
-                  <BadgeCheck className="mr-2 mt-1 size-4 shrink-0 text-primary" />
+                  <BadgeCheck className="mr-2 size-6 shrink-0 text-primary" />
                   Bebas kirim paket berapa pun, tanpa minimum jumlah paket.
                 </li>
                 <li className="gap2 flex items-start justify-normal text-start">
-                  <BadgeCheck className="mr-2 mt-1 size-4 shrink-0 text-primary" />
+                  <BadgeCheck className="mr-2 size-6 shrink-0 text-primary" />
                   Sistem terintegrasi dan otomatis, tak perlu ribet ganti
                   aplikasi dan mendukung pembayaran COD.
                 </li>
@@ -146,7 +124,7 @@ const HomePage = () => {
             </div>
 
             {/* Col */}
-            <div className="flex aspect-square w-full items-center justify-center lg:w-6/12">
+            <div className="flex aspect-square w-full items-center justify-center lg:w-5/12">
               <Image
                 src="/frame-solusi-pengiriman.webp"
                 alt="Image"
@@ -160,12 +138,12 @@ const HomePage = () => {
       </section>
 
       {/* Section */}
-      <section className="bg-slate-100 px-4 py-16">
+      <section className="bg-slate-100 px-4 py-20">
         <div className="container">
           {/* Row */}
-          <div className="flex w-full flex-col items-center gap-8 lg:flex-row lg:justify-between">
+          <div className="flex w-full flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between">
             {/* Col */}
-            <div className="flex aspect-square w-full items-center justify-center lg:w-6/12">
+            <div className="flex aspect-square w-full items-center justify-center lg:w-5/12">
               <Image
                 src="/framre-cod-fast-release.webp"
                 alt="Image"
@@ -176,27 +154,25 @@ const HomePage = () => {
             </div>
 
             {/* Col */}
-            <div className="flex w-full flex-col gap-4 lg:w-5/12">
-              <h2 className="text-balance text-2xl font-bold lg:text-4xl">
-                Rilis Dana COD Cepat, Tanpa Tunggu Lama
-              </h2>
+            <div className="flex w-full flex-col gap-4 lg:w-6/12">
+              <h2 className="h2">Rilis Dana COD Cepat, Tanpa Tunggu Lama</h2>
 
-              <p className="text-lg">
+              <p className="lead">
                 Paket tiba di tujuan, dana COD langsung masuk saldo aktif di
                 hari yang sama.
               </p>
 
               <ul className="grid gap-2">
                 <li className="gap2 flex items-start justify-normal text-start">
-                  <BadgeCheck className="mr-2 mt-1 size-4 shrink-0 text-primary" />
+                  <BadgeCheck className="mr-2 size-6 shrink-0 text-primary" />
                   Saldo aktif bisa ditarik ke rekeningmu secara real time.
                 </li>
                 <li className="gap2 flex items-start justify-normal text-start">
-                  <BadgeCheck className="mr-2 mt-1 size-4 shrink-0 text-primary" />
+                  <BadgeCheck className="mr-2 size-6 shrink-0 text-primary" />
                   Paket masih di jalan, dana COD cair duluan dengan COD Advance.
                 </li>
                 <li className="gap2 flex items-start justify-normal text-start">
-                  <BadgeCheck className="mr-2 mt-1 size-4 shrink-0 text-primary" />
+                  <BadgeCheck className="mr-2 size-6 shrink-0 text-primary" />
                   Tidak perlu menunggu berhari-hari untuk menerima dana COD-mu.
                 </li>
               </ul>
@@ -206,29 +182,27 @@ const HomePage = () => {
       </section>
 
       {/* Section */}
-      <section className="px-4 py-16">
+      <section className="px-4 py-20">
         <div className="container">
           {/* Row */}
-          <div className="flex w-full flex-col items-center gap-8 lg:flex-row lg:justify-between">
+          <div className="flex w-full flex-col items-center gap-12 lg:flex-row lg:justify-between">
             {/* Col */}
-            <div className="flex w-full flex-col gap-4 lg:w-5/12">
-              <h2 className="text-balance text-2xl font-bold lg:text-4xl">
-                Selalu Siap Membantu Bisnis Kamu
-              </h2>
+            <div className="flex w-full flex-col gap-4 lg:w-6/12">
+              <h2 className="h2">Selalu Siap Membantu Bisnis Kamu</h2>
 
-              <p className="text-lg">
+              <p className="lead">
                 KiriminAja membantu permasalahan bisnismu, dari pengiriman paket
                 hingga pengembangan bisnis.
               </p>
 
               <ul className="grid gap-2">
                 <li className="gap2 flex items-start justify-normal text-start">
-                  <BadgeCheck className="mr-2 mt-1 size-4 shrink-0 text-primary" />
+                  <BadgeCheck className="mr-2 size-6 shrink-0 text-primary" />
                   Memiliki learning ecosystem yang dibangun untuk meningkatkan
                   kualitas bisnis member
                 </li>
                 <li className="gap2 flex items-start justify-normal text-start">
-                  <BadgeCheck className="mr-2 mt-1 size-4 shrink-0 text-primary" />
+                  <BadgeCheck className="mr-2 size-6 shrink-0 text-primary" />
                   Dapat dihubungi di platform mana pun, via Telepon, WhatsApp,
                   atau Media Sosial.
                 </li>
@@ -236,7 +210,7 @@ const HomePage = () => {
             </div>
 
             {/* Col */}
-            <div className="flex aspect-square w-full items-center justify-center lg:w-6/12">
+            <div className="flex aspect-square w-full items-center justify-center lg:w-5/12">
               <Image
                 src="/support.webp"
                 alt="Image"
@@ -250,12 +224,12 @@ const HomePage = () => {
       </section>
 
       {/* Section */}
-      <section className="px-4 py-16 pt-0">
+      <section className="px-4 py-20 pt-0">
         <div className="container">
           {/* Row */}
-          <div className="flex w-full flex-col-reverse items-center gap-8 lg:flex-row lg:justify-between">
+          <div className="flex w-full flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between">
             {/* Col */}
-            <div className="flex w-full flex-wrap items-center justify-around gap-4 lg:w-6/12">
+            <div className="flex w-full flex-wrap items-center justify-around gap-4 lg:w-5/12">
               {logoClouds?.slice(0, 10).map((item) => (
                 <Link
                   key={item.id}
@@ -273,13 +247,13 @@ const HomePage = () => {
               ))}
             </div>
             {/* Col */}
-            <div className="flex w-full flex-col gap-4 lg:w-5/12">
+            <div className="flex w-full flex-col gap-4 lg:w-6/12">
               <h2 className="h2">
                 Dipercaya oleh Ribuan&nbsp;
                 <span className="text-primary">Pebisnis Online</span>
               </h2>
 
-              <p className="text-lg">
+              <p className="lead">
                 Mulai dari UMKM, brand ternama, hingga perusahaan-perusahaan
                 yang tersebar di seluruh Indonesia telah mempercayakan
                 pengirimannya kepada KiriminAja. Bisnis lebih mudah dalam
@@ -291,7 +265,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimoni */}
-      <section className="bg-slate-100 px-4 py-16">
+      <section className="bg-slate-100 px-4 py-20">
         <div className="container flex flex-col items-center gap-8">
           <h2 className="h2 text-center">Kata Mereka tentang KiriminAja</h2>
 
@@ -300,7 +274,7 @@ const HomePage = () => {
       </section>
 
       {/* FAQ */}
-      <section className="px-4 py-16">
+      <section className="px-4 py-20">
         <div className="container flex flex-col items-center gap-8">
           <h2 className="h2 text-center">Pertanyaan yang Sering Diajukan</h2>
 

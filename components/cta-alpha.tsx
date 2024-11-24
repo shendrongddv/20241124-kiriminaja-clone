@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ButtoAppStore, ButtoGooglePlay } from "./button-download";
 
 export const CtaAlpha = () => {
   return (
-    <section className="bg-slate-100 px-4 pt-16">
+    <section className="bg-slate-100 px-4 pt-20">
       <div className="container flex flex-col items-center gap-16 lg:flex-row lg:justify-between">
         {/* Col */}
-        <div className="flex w-full flex-col items-start justify-center gap-4 text-start lg:w-5/12">
+        <div className="flex w-full flex-col items-start justify-center gap-4 text-start lg:w-6/12 lg:pb-20">
           <span className="font-semibold text-primary">
             #BantuMenujuLebihMaju
           </span>
@@ -18,42 +19,19 @@ export const CtaAlpha = () => {
             KiriminAja.
           </p>
 
-          <div className="mt-4 flex gap-4">
+          <div className="mt-4 flex gap-8">
             <div className="grid gap-4">
-              <Link
-                href="#"
-                className="flex max-h-16 items-center justify-center overflow-hidden rounded-xl"
-              >
-                <Image
-                  src="/playstore.webp"
-                  alt="Image"
-                  width={348}
-                  height={105}
-                  className="h-full w-auto"
-                />
-              </Link>
-
-              <Link
-                href="#"
-                className="flex max-h-16 items-center justify-center overflow-hidden rounded-xl"
-              >
-                <Image
-                  src="/appstore.webp"
-                  alt="Image"
-                  width={348}
-                  height={105}
-                  className="h-full w-auto"
-                />
-              </Link>
+              <ButtoGooglePlay />
+              <ButtoAppStore />
             </div>
 
-            <div className="flex aspect-square h-36 shrink-0 items-center justify-center rounded-xl bg-white p-1">
+            <div className="flex aspect-square h-28 shrink-0 items-center justify-center">
               <Image
                 src="/qr-code-ka.png"
                 alt="Image"
                 width={128}
                 height={128}
-                className="h-full w-auto"
+                className="h-28 w-auto object-cover"
               />
             </div>
           </div>
@@ -67,7 +45,7 @@ export const CtaAlpha = () => {
         </div>
 
         {/* Col */}
-        <div className="flex w-full items-center justify-center lg:w-6/12">
+        <div className="flex w-full items-center justify-center lg:w-5/12">
           <Image
             src="/3Phone_CTA_NEW_V2.webp"
             alt="Image"

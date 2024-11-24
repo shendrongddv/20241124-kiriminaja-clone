@@ -34,75 +34,75 @@ export const keunggulan = [
 export const logoClouds = [
   {
     id: "22588a8f-18fd-55b9-95bd-0040ddb67870",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "09fc6004-f322-51d0-8eee-f49a4d64f5fe",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "f6a6b3bb-ceba-5bc1-b29f-a26011d6c169",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "29eaa89b-9171-5e74-9405-ce12859f4661",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "3acbdda8-e25a-5784-a9d3-2243e225619a",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "24188724-c863-5f7e-9206-1142b7ca22ab",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "d8acd53e-e448-59e1-9e7a-63ed8f80285a",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "6145055b-3ebe-5947-b89a-f9712d6dca97",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "7c62fc29-5213-5d47-8c57-d33c7e14ee69",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "ceb38e10-3004-57b9-8e20-adf099a2f5a7",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "e5299081-0c58-593e-8b5f-ffd2cc0898f3",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "0ba750ec-392f-5f13-9026-176396b87c88",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "eabb429b-7934-593d-9759-09ac870921d3",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "d12a6416-3340-5f0d-bb54-3d4eea513c22",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "b3196c7e-c034-5823-9b35-1b8bfccb18ae",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "868dc49b-848a-5573-82d4-c47becec5927",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "3ca795de-deb4-5083-a7cb-265136dd5c7d",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
   {
     id: "275f5652-1f3a-53b5-8a43-251b906be6a6",
-    media: "logoipsum-332.svg",
+    media: "logo-kiriminaja.webp",
   },
 ];
 
